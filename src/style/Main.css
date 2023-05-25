@@ -1,0 +1,270 @@
+:root {
+  --darkBlueEmailBg: hsl(217, 28%, 15%);
+  --darkBlueMainBg: #181f2a;
+  --darkBlueFooterBg: hsl(216, 53%, 9%);
+  --darkBlueTestBg: hsl(219, 30%, 18%);
+
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --lightRedError: hsl(0, 100%, 63%);
+}
+
+/****************************/
+/******Service Section*******/
+/****************************/
+
+.service-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--darkBlueMainBg);
+  padding: 40px 20px;
+}
+
+.service-card h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.img {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  margin: 20px 0px;
+}
+
+.one {
+  background-image: url(../images/icon-access-anywhere.svg);
+}
+.two {
+  background-image: url(../images/icon-security.svg);
+}
+.three {
+  background-image: url(../images/icon-collaboration.svg);
+}
+.four {
+  background-image: url(../images/icon-any-file.svg);
+}
+
+/****************************/
+/******Banner Section*******/
+/****************************/
+
+.section-banner {
+  background-color: var(--darkBlueMainBg);
+  padding: 100px 20px;
+}
+
+.banner-img {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-img img {
+  height: 250px;
+  margin: 0px 0px 50px;
+}
+
+.banner-text {
+  text-align: start;
+}
+
+.banner-text h1 {
+  font-size: 18px;
+}
+.banner-text p {
+  margin: 15px 0px;
+  font-weight: 400;
+}
+
+.banner-text a {
+  color: var(--cyan);
+  text-decoration: none;
+  border-bottom: 1px solid var(--cyan);
+}
+.banner-text a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/****************************/
+/*****Testimonial Section****/
+/****************************/
+
+.section-testimonial {
+  background-color: var(--darkBlueMainBg);
+  padding: 100px 40px 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  background-image: url(../images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-position: 10% 6.5%;
+  background-size: 10%;
+}
+.testimonial-card {
+  background-color: var(--darkBlueTestBg);
+  padding: 40px 30px;
+  border-radius: 5px;
+}
+
+.testimonial p {
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.footer-card {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 0px;
+}
+
+.avatar {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.avatar.one {
+  background-image: url(../images/profile-1.jpg);
+}
+.avatar.two {
+  background-image: url(../images/profile-2.jpg);
+}
+.avatar.three {
+  background-image: url(../images/profile-3.jpg);
+}
+
+.avatar-titles h1 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.avatar-titles h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 992px) {
+  /****************************/
+  /******Service Section*******/
+  /****************************/
+  .section-services {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--darkBlueMainBg);
+    padding: 0px 300px;
+    gap: 50px;
+  }
+
+  .service-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    width: 45%;
+    margin: auto;
+  }
+
+  .service-card h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .img {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    margin: 20px 0px;
+  }
+
+  /****************************/
+  /******Banner Section*******/
+  /****************************/
+
+  .section-banner {
+    background-color: var(--darkBlueMainBg);
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+  }
+
+  .banner-img {
+    display: flex;
+    justify-content: none;
+    margin-right: 0px;
+  }
+
+  .banner-img img {
+    height: 441px;
+    margin: 0px 0px;
+    width: 620px;
+  }
+
+  .banner-text {
+    text-align: start;
+  }
+
+  .banner-text h1 {
+    font-size: 30px;
+    width: 50%;
+  }
+  .banner-text p {
+    margin: 15px 0px;
+    font-weight: 400;
+    width: 90%;
+  }
+
+  .banner-text a {
+    color: var(--cyan);
+    text-decoration: none;
+    border-bottom: 1px solid var(--cyan);
+  }
+
+  /****************************/
+  /*****Testimonial Section****/
+  /****************************/
+
+  .section-testimonial {
+    background-color: var(--darkBlueMainBg);
+    padding: 100px 80px 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    background-image: url(../images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 9% 8%;
+    background-size: 6%;
+  }
+  .testimonial-card {
+    background-color: var(--darkBlueTestBg);
+    padding: 30px 30px;
+    border-radius: 5px;
+    width: 360px;
+  }
+
+  .testimonial p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .avatar-titles h1 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .avatar-titles h2 {
+    font-size: 10px;
+    font-weight: 200;
+  }
+}

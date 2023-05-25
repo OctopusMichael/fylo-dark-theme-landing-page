@@ -1,0 +1,209 @@
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --darkBlueEmailBg: hsl(217, 28%, 15%);
+  --darkBlueMainBg: #181f2a;
+  --darkBlueFooterBg: hsl(216, 53%, 9%);
+  --darkBlueTestBg: hsl(219, 30%, 18%);
+
+  /* ### Accent */
+
+  --cyan: #65e2d9;
+  --blue: #339ecc;
+  --lightRedError: hsl(0, 100%, 63%);
+  /* (Neutral)  */
+}
+
+/****************************/
+/**********NAVBAR************/
+/****************************/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0px 20px;
+}
+
+.logo a img {
+  height: 30px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: white;
+}
+.menu ul li a:hover {
+  text-decoration: none;
+  margin-right: 20px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/****************************/
+/********HERO SECTION********/
+/****************************/
+
+.section-hero {
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(24, 31, 42, 1) 40%,
+      rgba(0, 0, 0, 0) 0%
+    ),
+    url(../images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 51%;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.hero-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hero-img img {
+  width: 20rem;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.hero-text h1 {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+
+.hero-text p {
+  margin: 30px 0px;
+  padding: 0px 20px;
+}
+
+.hero-text button {
+  /*  background: rgb(101, 226, 217); */
+  background: linear-gradient(
+    45deg,
+    rgba(101, 226, 217, 1) 38%,
+    rgba(51, 158, 204, 1) 93%
+  );
+  border: none;
+  height: 50px;
+  border-radius: 50px;
+  width: 250px;
+  margin: auto;
+  color: white;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  background: var(--cyan);
+}
+
+@media only screen and (min-width: 992px) {
+  /****************************/
+  /**********NAVBAR************/
+  /****************************/
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0px 80px;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    margin-left: 55px;
+    margin-right: 0px;
+    color: white;
+  }
+
+  .menu ul li a:hover {
+    text-decoration: none;
+    margin-left: 55px;
+    margin-right: 0px;
+    color: white;
+  }
+
+  /****************************/
+  /********HERO SECTION********/
+  /****************************/
+  .section-hero {
+    height: 100vh;
+    background: /* linear-gradient(0deg, rgb(24, 31, 42) 13%, rgba(0, 0, 0, 0) 0%), */ url(../images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-img {
+    /*  display: flex;
+    justify-content: center;
+    align-items: start; */
+    margin-top: -120px;
+    margin-bottom: 20px;
+  }
+  .hero-img img {
+    width: 40rem;
+  }
+
+  .hero-text {
+    text-align: center;
+    padding: 0px 80px;
+    margin-top: 0px;
+  }
+
+  .hero-text h1 {
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    height: 100px;
+    width: 600px;
+    margin: auto;
+    /* margin: -200px auto 0px; */
+  }
+
+  .hero-text p {
+    margin: 30px 0px;
+    padding: 0px 20px;
+    width: 600px;
+    margin: 20px auto 40px;
+    font-size: 18px;
+  }
+  .hero-text button {
+    /*  background: rgb(101, 226, 217); */
+    background: linear-gradient(
+      45deg,
+      rgba(101, 226, 217, 1) 38%,
+      rgba(51, 158, 204, 1) 93%
+    );
+    border: none;
+    height: 55px;
+    border-radius: 50px;
+    width: 280px;
+    margin: auto;
+    color: white;
+  }
+}
